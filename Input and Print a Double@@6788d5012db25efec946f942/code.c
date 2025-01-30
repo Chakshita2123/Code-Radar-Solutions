@@ -2,7 +2,10 @@
 
 int main() {
     double num;
-    scanf("%lf", &num);
-    printf("You entered: %.lf\n", num);
-    return 0;
+    if (scanf("%lf", &num)==1) {
+        printf("You entered: %.4lf\n", num);
+    } else {
+        printf("Invalid\n");
+    }
+     return 0;
 }
