@@ -6,8 +6,10 @@ int main() {
         printf("Positive\n");
     } else if (num < 0) {
         printf("Negative\n");
+    } else if (num = 0) {
+        printf("Zero\n");
     } else {
-        printf("Zero");
+        printf("Enter a valid number\n");
     }
     return 0;
 }
