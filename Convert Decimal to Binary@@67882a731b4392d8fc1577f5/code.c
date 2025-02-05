@@ -1,21 +1,17 @@
 #include <stdio.h>
-void decimaltobinary(int n) {
-    int i;
-    int binary[32] = {0};
+void decimalToBinary(int n) {
+    int size = sizeof(n) * 8;
 
-    for (i = 31; i >= 0; i--) {
-        binary[i] = n & 1;
-        n >>= 1;
-    }
-    printf("binary representation: ");
-    for (i = 0; i < 32; i++) {
-        printf("%d", binary[i]);
+    for (int i = size - 1; i >= 0; i--) {
+        int bit = (n >> i) & 1;
+        printf("%d", bit);
     }
     printf("\n");
 }
-int main(){
-    int decimal;
-    scanf("%d", &decimal);
-    decimaltobinary(decimal);
+int main() {
+    int decimalNumber;
+    scanf("%d", &decimalNumber);
+    decimalNumber(decimalNumber);
     return 0;
 }
+    
