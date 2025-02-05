@@ -11,7 +11,7 @@ void decimalToBinary(int n) {
 int main() {
     int decimalNumber;
     scanf("%d", &decimalNumber);
-    decimalNumber(decimalNumber);
+    decimalToBinary(decimalNumber);
     return 0;
 }
     
