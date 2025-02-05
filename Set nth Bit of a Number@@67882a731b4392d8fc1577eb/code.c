@@ -1,6 +1,6 @@
 #include <stdio.h>
-void setNthBit(int *num, int n) {
-    *num |= (1 << n);
+void setNthBit(int num, int n) {
+    return num | (1 << n);
 }
 int main() {
     int num, n;
