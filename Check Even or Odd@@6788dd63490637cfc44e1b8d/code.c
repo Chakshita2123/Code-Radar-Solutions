@@ -1,13 +1,13 @@
 #include <stdio.h>
-void checkEvenOdd(int num) {
-    if (num & 1)
-    printf("Odd\n", num);
-    else
-    printf("Even\n", num);
-}
 int main() {
     int num;
     scanf("%d", &num);
-    checkEvenOdd(num);
+    if (num % 2 == 0) {
+        printf("Even\n");
+    } else if (num % 2 != 0) {
+        printf("Odd\n");
+    } else {
+        printf("Zero\n");
+    }
     return 0;
 }
