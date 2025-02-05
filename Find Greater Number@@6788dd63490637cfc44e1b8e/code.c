@@ -3,7 +3,7 @@ void findGreater(int a, int b) {
     if (a > b)
     printf("%d\n", a, b);
     else if (b > a)
-    printf("%d\n", a, b);
+    printf("%d\n", b, a);
     else
     printf("Both are equal\n");
 }
