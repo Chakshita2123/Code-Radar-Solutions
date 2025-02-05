@@ -6,7 +6,7 @@ int main() {
     int num, n;
     scanf("%d", &num);
     scanf("%d", &n);
-    int result = setBit(num, n);
-    printf("%d\n", n, result);
+    num = setBit(num, n);
+    printf("%d\n", n, num);
     return 0;
 }
