@@ -1,13 +1,14 @@
 #include <stdio.h>
+void swap(int *a, int *b) {
+    *a = *a ^ *b;
+    *b = *a ^ *b;
+    *a = *a ^ *b;
+}
 int main() {
-    int a, b;
-    scanf("%d %d", &a, &b);
-    printf("%d %d\n", a, b);
-
-    a = a ^ b;
-    b = a ^ b;
-    a = a ^ b;
-
-    printf("%d %d", a, b);
+    int x, y;
+    scanf("%d %d", &x, &y);
+    printf("%d %d\n", x, y);
+    swap(&x, &y);
+    printf("%d %d\n", x, y);
     return 0;
 }
