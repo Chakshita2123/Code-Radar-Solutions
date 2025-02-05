@@ -1,15 +1,16 @@
 #include <stdio.h>
-void findGreater(int a, int b) {
+int findGreater(int a, int b) {
     if (a > b)
-    printf("%d\n", a, b);
+    return a;
     else if (b > a)
-    printf("%d\n", b, a);
+    return b;
     else
-    printf("Both are equal\n");
+    return 0;
 }
 int main() {
-    int num1, num2;
+    int num1, num2, result;
     scanf("%d %d", &num1, &num2);
-    findGreater(num1, num2);
+    result = findGreater(num1, num2);
+    printf("%d\n", result);
     return 0;
 }
