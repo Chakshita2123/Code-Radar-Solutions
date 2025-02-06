@@ -3,9 +3,9 @@ int main() {
     int grades;
     scanf("%d",&grades);
     if (grades='A') {
-        printf("Excellent\n");
+        printf("Excellent");
     } else if (grades='B') {
-        printf("Good\n");
+        printf("Good");
     } else if (grades='C') {
         printf("Average\n");
     } else if (grades='D') {
