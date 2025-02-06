@@ -4,13 +4,13 @@ int main() {
     scanf("%d",&grades);
     if (grades='A') {
         printf("Excellent\n");
-    } else if (grades=='B') {
+    } else if (grades='B') {
         printf("Good\n");
-    } else if (grades=='C') {
+    } else if (grades='C') {
         printf("Average\n");
-    } else if (grades=='D') {
+    } else if (grades='D') {
         printf("Below Average\n");
-    } else if (grades=='F') {
+    } else if (grades='F') {
         printf("Fail\n");
     } else {
         printf("Invalid grade\n");
