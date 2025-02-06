@@ -2,7 +2,7 @@
 int main() {
     int grades;
     scanf("%d",&grades);
-    if (grades=='A') {
+    if (grades='A') {
         printf("Excellent\n");
     } else if (grades=='B') {
         printf("Good\n");
