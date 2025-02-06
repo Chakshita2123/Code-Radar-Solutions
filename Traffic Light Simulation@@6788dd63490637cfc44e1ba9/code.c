@@ -11,7 +11,7 @@ void trafficlightaction(char signal) {
         printf("Slow Down\n");
         break;
         default:
-        printf("INnvalid input\n");
+        printf("Invalid input\n");
     }
 }
 int main() {
