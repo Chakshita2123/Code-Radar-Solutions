@@ -4,6 +4,10 @@ int main() {
     int num1, num2;
 
     scanf("%d %d", &num1, &num2);
-    printf("%s\n", (num1==num2) ? "True" : "False");
+    if (num1==num2) {
+        printf("True\n");
+    } else {
+        printf("False\n");
+    }
     return 0;
 }
