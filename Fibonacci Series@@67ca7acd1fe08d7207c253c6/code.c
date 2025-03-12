@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-void fibonacci(int n) {
+void fibonacciSeries(int n) {
     int a = 0, b = 1, next;
     
     for (int i = 0; i < n; i++) {
         printf("%d", a);
         if (i < n - 1) {
-            printf(" "); 
+            printf(" "); // Ensure space-separated output
         }
         next = a + b;
         a = b;
@@ -16,8 +16,20 @@ void fibonacci(int n) {
 }
 
 int main() {
-    int N;
-    scanf("%d", &N);
-    fibonacci(N);
+    int n;
+
+    // Read the number of terms
+    scanf("%d", &n);
+
+    // Validate input
+    if (n <= 0) {
+        printf("Invalid input\n");
+        return 0;
+    }
+
+    // Call the function
+    fibonacciSeries(n);
+
     return 0;
 }
+
