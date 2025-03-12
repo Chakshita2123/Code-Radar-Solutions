@@ -1,20 +1,23 @@
-#include <stdio.h>
-int main() {
-    int t;
-    scanf("%d", &t);
-    while (t--) {
-        int num;
-        scanf("%d", &num);
-        printf("%d\n", isPrime(num));
+#include<stdio.h>
+#include<math.h>
+int isPrime(int num){
+    if(num<=1){
+        return 0;
     }
-    return 0;
-}
-int isPrime(int num) {
-    if (num < 2) return 0; 
-    for (int i = 2; i * i <= num; i++) {  
-        if (num % i == 0)
-            return 0;  
+    else if(num<=3){
+        return 1;
+
     }
-    return 1;  
+    else if(num%2==0|| num %3==0){
+        return 0;
+    }
+    int i=5;
+    while(i*i<num){
+        if(num%i==0||num%(i+2)==0){
+            return 0;
+        }
+        i+=6;
+    }
+    return 1;
 }
 
